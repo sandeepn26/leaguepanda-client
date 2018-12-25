@@ -1,0 +1,279 @@
+.. Silver Edge documentation master file, created by
+   sphinx-quickstart on Wed Apr 18 14:57:59 2018.
+   You can adapt this file completely to your liking, but it should at least
+   contain the root `toctree` directive.
+
+=================================================================================
+Welcome to Silver Edge - Multipurpose Bootstrap 4 Admin Template's documentation!
+=================================================================================
+
+.. toctree::
+   :maxdepth: 2
+   :caption: Silver Edge - Multipurpose Bootstrap 4 Admin Template
+   
+
+Silver Edge - Multipurpose Bootstrap 4 Admin Template
+=====================================================
+.. meta::
+   :keywords: reStructuredText, demonstration, demo, parser
+   :description lang=en: A demonstration of the reStructuredText
+       markup language, containing examples of all basic
+       constructs and many advanced constructs.
+
+.. contents:: Table of Contents
+.. section-numbering::
+
+
+Side Bar
+========
+
+.. code:: html
+
+		<div class="offcanvas-container" id="menu-categories">
+			<a class="account-link" href="javascript:void(0)">
+				<div class="user-ava">
+					<img src="assets/img/avatar/default-avatar.jpg" alt="administrator">
+				</div>
+				<div class="user-info">
+					<h6 class="user-name">Administrator</h6>
+					<span class="text-sm text-white opacity-60">pvrtechstudio</span>
+				</div>
+			</a>
+			<nav class="offcanvas-menu">
+				<ul class="menu">
+					<li class="has-children">
+						<span>
+							<a href="index.html"><span>Home</span></a>
+							<span class="sub-menu-toggle"></span>
+						</span>
+						<ul class="offcanvas-submenu">
+							<li><a href="index.html">Dashboard v1</a></li>
+							<li><a href="dashboard_v2.html">Dashboard v2</a></li>
+							<li><a href="dashboard_v3.html">Dashboard v3</a></li>
+							<li><a href="javascript:void(0)">More to come. Stay Tuned.</a></li>
+						</ul>
+					</li>
+				</ul>
+			</nav>
+		</div>
+
+Mobile Menu
+===========
+
+.. code:: html
+
+		<div class="offcanvas-container" id="mobile-menu">
+			<a class="account-link" href="javascript:void(0)">
+				<div class="user-ava">
+					<img src="assets/img/avatar/default-avatar.jpg" alt="administrator">
+				</div>
+				<div class="user-info">
+					<h6 class="user-name">Administrator</h6>
+					<span class="text-sm text-white opacity-60">pvrtechstudio</span>
+				</div>
+			</a>
+			<nav class="offcanvas-menu">
+				<ul class="menu">
+					<li class="has-children">
+						<span>
+							<a href="index.html"><span>Home</span></a>
+							<span class="sub-menu-toggle"></span>
+						</span>
+						<ul class="offcanvas-submenu">
+							<li><a href="index.html">Dashboard v1</a></li>
+							<li><a href="dashboard_v2.html">Dashboard v2</a></li>
+							<li><a href="dashboard_v3.html">Dashboard v3</a></li>
+							<li><a href="javascript:void(0)">More to come. Stay Tuned.</a></li>
+						</ul>
+					</li>
+				</ul>
+			</nav>
+		</div>		
+
+		
+Header
+======
+
+.. code:: html
+
+		<header class="navbar navbar-stuck">
+			<form class="site-search" method="get">
+				<input type="text" name="site_search" placeholder="Type to search..." autocomplete="off">
+				<div class="search-tools">
+					<span class="clear-search">Clear</span>
+					<span class="close-search"><i class="icon-cross"></i></span>
+				</div>
+			</form>
+			<div class="site-branding">
+				<div class="inner">					
+					<a class="offcanvas-toggle cats-toggle" href="#menu-categories" data-toggle="offcanvas"></a>
+					<a class="offcanvas-toggle menu-toggle" href="#mobile-menu" data-toggle="offcanvas"></a>
+					<a class="site-logo" href="index.html">
+						<img src="assets/img/logo/logo.png" alt="PVR_Tech_Studio">
+					</a>
+				</div>
+			</div>
+			<nav class="site-menu">
+				<ul>
+					<li class="has-megamenu">
+						<a href="index.html"><span>Home</span></a>
+						<ul class="mega-menu">
+							<li>
+								<a class="d-block img-thumbnail text-center navi-link" href="index.html">
+									<img alt="dashboard_1" src="assets/img/mega_menu/01.jpg">
+									<h6 class="mt-3">Dashboard v1</h6>
+								</a>
+							</li>
+							<li>
+								<a class="d-block img-thumbnail text-center navi-link" href="dashboard_v2.html">
+									<img alt="dashboard_v2" src="assets/img/mega_menu/02.jpg">
+									<h6 class="mt-3">Dashboard v2</h6>
+								</a>
+							</li>
+							<li>
+								<a class="d-block img-thumbnail text-center navi-link" href="dashboard_v3.html">
+									<img alt="dashboard_v3" src="assets/img/mega_menu/03.jpg">
+									<h6 class="mt-3">Dashboard v3</h6>
+								</a>
+							</li>
+							<li>
+								<div class="img-thumbnail text-center">
+									<img alt="More To Come. Stay Tuned!" src="assets/img/mega_menu/04.jpg">
+									<h6 class="mt-3">More to come. Stay Tuned!</h6>
+								</div>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</nav>
+		</header>
+		
+
+Sticky Header
+=============
+Add Class ``navbar-sticky`` replacing with ``navbar-stuck``
+
+.. code:: html
+
+		<header class="navbar navbar-sticky">
+		
+		</header>
+			
+			
+Breadcrumbs
+===========
+
+.. code:: html
+
+		<div class="page-title m-b-0">
+			<div class="container">
+				<div class="column">
+					<h1>Login v1</h1>
+				</div>
+				<div class="column">
+					<ul class="breadcrumbs">
+						<li><a href="index.html">Home</a>
+						</li>
+						<li class="separator">&nbsp;</li>
+						<li>Essentials</li>
+						<li class="separator">&nbsp;</li>
+						<li>Login v1</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		
+Content
+=======
+
+.. code:: html
+
+		<div class="container" id="container">
+		
+		</div>
+		
+Footer
+======
+
+.. code:: html
+
+		<footer class="site-footer footer-light fixed">
+			<div class="container footer-copyright">
+				<!-- COPYRIGHT-->
+				<div class="column">
+					2018 © All rights reserved.
+				</div>
+				<div class="column footer_right">
+					<a href="http://www.pvrtechstudio.com/" target="_blank">PVR Tech Studio</a> We Design Your Future.
+				</div>
+			</div>
+		</footer>
+		
+To Top
+======
+
+.. code:: html
+
+		<a class="scroll-to-top-btn" href="javascript:void(0)">
+			<i class="icon-arrow-up"></i>
+		</a>
+		
+
+Preloader
+=========
+
+.. code:: html
+
+		<div id="preloader">
+			<div class="inner">
+				<span class="loader"></span>
+			</div>
+		</div>
+		
+		
+Script & Style Injection
+========================
+Automatic script and style injection based on particular available class
+
+.. code:: js
+
+	var _container = jQuery(".clipboard");
+        if (_container.length > 0) {
+            loadScript(plugin_path + 'clipboard/clipboard.min.js', function () {
+			
+		/* CALL BACK FUNCTION*/
+				
+                $.fn._clipboard = function () {
+                    new Clipboard(".btn").on("success", function (e) {
+                        $(e.trigger).tooltip({
+                            title    : "Copied",
+                            placement: "top"
+                        }), $(e.trigger).tooltip("show"), setTimeout(function () {
+                            $(e.trigger).tooltip("dispose")
+                        }, 500)
+                    })
+                };
+                if ($(".clipboard").length > 0) {
+                    $()._clipboard();
+                }
+            });
+        }
+		
+		
+Classes for injection
+=====================
+
+- Apply this class any where it will inject the mentioned script and style
+
+  + ``.perfect_scrollbar`` --> ``perfect-scrollbar.min.css`` & ``perfect-scrollbar.jquery.min.js``
+  + ``.sweet_alert`` --> ``sweetalert.css`` & ``sweetalert.min.js``
+  + Multilevel Menu Sidebar v2 ``#ml-menu`` --> ``sidebar/component.css`` & ``sidebar/modernizr-custom.js`` & ``sidebar/main.js``
+  + ``.instafeed`` --> ``fancybox/css/jquery.fancybox.min.css`` & ``fancybox/js/jquery.fancybox.min.js`` & ``instafeed/instafeed.js``
+  + ``.email_page`` --> ``ckeditor/ckeditor.js``
+  + ``.validation`` --> ``jquery-validate/jquery.validate.min.js`` & ``jquery-validate/additional-methods.min.js`` & ``jquery-validate.bootstrap-tooltip.min.js``
+  + ``.date_picker`` --> ``bootstrap-datepicker3.css`` & ``bootstrap-datepicker.js``
+  + ``.time_picker`` --> ``bootstrap-datetimepicker.min.css`` & ``bootstrap-datetimepicker.js``
+  + ``.select_2`` --> ``select2.min.css`` & ``select2.min.js``
+  + ``.clipboard`` --> ``clipboard.min.js``
+  + ``.sessionTimeout`` --> ``jquery.sessionTimeout.js``
+  + ``#editor`` --> ``ckeditor/ckeditor.js``

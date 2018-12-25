@@ -1,0 +1,52 @@
+<div class="container clipboard">
+  <h6 class="text-muted text-normal text-uppercase margin-top-2x">Clipboard</h6>
+  <hr class="margin-bottom-1x">
+  <div class="clearfix">
+    <div class="col-sm-6">
+      <p>Add <code>data-clipboard-target="#clipboard-default"</code> attribute to copy.</p>
+      <div class="form-group">
+        <label>Default</label>
+        <div class="input-group">
+          <input id="clipboard-default" type="text" class="form-control"
+                 value="http://palanivelayudam.net/"/>
+          <span class="input-group-btn">
+												<button class="btn btn-primary" type="button"
+                                                        data-clipboard-target="#clipboard-default"><i
+                                                        class="fa fa-clipboard"></i></button>
+											</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="clearfix">
+    <div class="col-sm-12">
+      <p>Add <code>data-clipboard-target="#clipboard-textarea"
+        data-clipboard-action="cut"</code> attribute to Clipboard Action.</p>
+      <div class="form-group col-sm-6 p-l-0">
+        <label class="control-label">Cut to copy</label>
+        <textarea class="form-control m-b-10" id="clipboard-textarea" rows="15">Mussum ipsum cacilds...</textarea>
+        <button class="btn btn-primary btn-sm" type="button"
+                data-clipboard-target="#clipboard-textarea" data-clipboard-action="cut">Cut
+          to clipboard
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <div class="clearfix">
+    <div class="col-sm-6">
+      <p>Add <code>data-clipboard-text="text to copy"</code> attribute to Clipboard Action.
+      </p>
+      <div class="form-group">
+        <label class="control-label">without Form</label>
+        <div class="clearfix">
+          <button class="btn btn-primary btn-sm" type="button"
+                  data-clipboard-text="Just because you can doesn't mean you should — clipboard.js">
+            Click to copy
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

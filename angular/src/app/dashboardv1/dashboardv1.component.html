@@ -1,0 +1,409 @@
+	<section class="container">
+		<div class="row">
+			<div class="col-xl-6 col-lg-6 mb-30">
+				<div class="video_content" style="min-height: 260px;">
+					<div class="video_title"><p class="video_title_text">Check our Limited Offers</p>
+						<h2 class="video_desc">Save up to 50%
+							<a href="javascript:void(0)" class="f-s-14 btn btn-primary btn-sm">
+								View <i class="fa fa-angle-right mg-l-5"></i>
+							</a>
+						</h2>
+					</div>
+					<div class="video-player">
+						<video class="video_tag"
+							   src="assets/img/ui_elements/free-video.mp4"
+							   poster="http://via.placeholder.com/670x350"
+							   loop="loop" autoplay>
+						</video>
+					</div>
+				</div>
+
+				<div class="card card-dash-one">
+					<div class="row no-gutters">
+						<div class="col-lg-6 col-md-6">
+							<i class="icon icon-note"></i>
+							<div class="wid-content">
+								<label>Withholding Tax</label>
+								<h2>130,792</h2>
+							</div>
+						</div>
+						<div class="col-lg-6 col-md-6 b-l">
+							<i class="icon icon-wallet"></i>
+							<div class="wid-content">
+								<label>Earnings</label>
+								<h2>927,013</h2>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-xl-6 col-lg-6 mb-30 r7_m-h-400" style="min-height: 270px;">
+				<div class="img-cover rounded b-box">
+					<div class="dash-item-overlay">
+						<h1 class="f-w-700 f-s-42"><span data-count="true" data-number="01307" id="btc"></span>
+							<span class="f-s-24">BTC</span></h1>
+						<p class="f-w-600">Bitcoin Earnings</p>
+						<p class="">Lorem Ipsum is simply dummy text of the<br>printing and typesetting industry.
+						</p>
+						<a href="javascript:void(0)" class="btn btn-outline-primary btn-sm w-100">View <i
+								class="fa fa-angle-right mg-l-5"></i></a>
+					</div>
+					<canvas baseChart style="height:100%"
+						[legend]="lineChartLegend"
+						[chartType]="lineChartType"
+						[colors]="lineChartColors"
+						[labels]="lineChartLabels"
+						[datasets]="lineChartData"
+						[options]="lineChartOptions"></canvas>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="container">
+		<div class="row">
+			<div class="col-lg-4 col-sm-6">
+				<div class="card">
+					<div class="widget_box p-15 p-b-0">
+						<h6 class="f-w-600"><i class="fa fa-pie-chart"></i> <span id="site_trafic"
+																				  data-typeit="true">Site Traffic</span>
+						</h6>
+						<div class="row">
+							<div class="col-md-6">
+								<p>Overall</p>
+								<p><i class="fa fa-caret-down f-s-20 text-danger"></i>
+									<span data-count="true" data-number="70" id="st_overall"></span>%</p>
+							</div>
+							<div class="col-md-6">
+								<p>Daily</p>
+								<p><i class="fa fa-caret-up f-s-20 text-success"></i>
+									<span data-count="true" data-number="90" id="st_daily"></span>%</p>
+							</div>
+							<div class="col-md-12 sparkline_chart">
+								<canvas height="100" id="pvrLineChart_1"></canvas>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-lg-4 r5_m_t_20 col-sm-6">
+				<div class="card">
+					<div class="widget_box p-15 p-b-0">
+						<h6><i class="fa fa-pie-chart"></i> <span id="data_transfer" data-typeit="true">Data Transfer</span>
+						</h6>
+						<div class="row">
+							<div class="col-md-6">
+								<p>Overall</p>
+								<p><i class="fa fa-caret-down f-s-20 text-danger"></i>
+									<span data-count="true" data-number="90" id="dt_overall"></span>%</p>
+							</div>
+							<div class="col-md-6">
+								<p>Daily</p>
+								<p><i class="fa fa-caret-up f-s-20 text-success"></i>
+									<span data-count="true" data-number="100" id="dt_daily"></span>%</p>
+							</div>
+							<div class="col-md-12 sparkline_chart">
+								<canvas height="100" id="pvrLineChart_2"></canvas>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-lg-4 r7_m-t-20 r5_m_t_20 col-sm-6">
+				<div class="card">
+					<div class="widget_box p-15 p-b-0">
+						<h6><i class="fa fa-pie-chart"></i> <span id="band_width"
+																  data-typeit="true">Bandwidth Usage</span>
+						</h6>
+						<div class="row">
+							<div class="col-md-6">
+								<p>Overall</p>
+								<p><i class="fa fa-caret-down f-s-20 text-danger"></i>
+									<span data-count="true" data-number="95" id="bw_overall"></span>%</p>
+							</div>
+							<div class="col-md-6">
+								<p>Daily</p>
+								<p><i class="fa fa-caret-up f-s-20 text-success"></i>
+									<span data-count="true" data-number="98" id="bw_daily"></span>%</p>
+							</div>
+							<div class="col-md-12 sparkline_chart">
+								<canvas height="100" id="pvrLineChart_3"></canvas>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="container p-t-20">
+		<div class="card card-dash-one">
+			<div class="row no-gutters">
+				<div class="col-lg-3 col-md-6">
+					<i class="icon icon-basket"></i>
+					<div class="wid-content">
+						<label>Total Sales</label>
+						<h2>080,494</h2>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6 b-l">
+					<i class="icon icon-user"></i>
+					<div class="wid-content">
+						<label>Page Visits</label>
+						<h2>944,080</h2>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6 b-l">
+					<i class="icon icon-note"></i>
+					<div class="wid-content">
+						<label>Withholding Tax</label>
+						<h2>130,792</h2>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6 b-l">
+					<i class="icon icon-wallet"></i>
+					<div class="wid-content">
+						<label>Earnings</label>
+						<h2>927,013</h2>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="container p-t-20">
+		<div class="row">
+			<div class="col-lg-4 col-md-6 jQueryEqualHeight">
+				<div class="card card-info bg_svg_red text-white">
+					<div class="card-body p-40">
+						<div class="d-flex justify-content-center m-b-30">
+							<i class="icon-wallet p-b-30 f-s-150"></i>
+						</div>
+						<h5 class="text-white m-b-20">Secure Paymeny Wallet</h5>
+						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+							has been the industry's standard dummy text ever since the 1500s.</p>
+						<a href="javascript:void(0)" class="btn btn-primary btn-block">Getting Started</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-lg-4 col-md-6 r5_m_t_20 jQueryEqualHeight">
+				<div class="card card-info bg_svg_green text-white">
+					<div class="card-body p-40">
+						<div class="d-flex justify-content-center m-b-30">
+							<i class="icon-mail p-b-30 f-s-150"></i>
+						</div>
+						<h5 class="text-white m-b-20">1.7% Exchange Rate</h5>
+						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+							has been the industry's standard dummy text ever since the 1500s.</p>
+						<a href="javascript:void(0)" class="btn btn-primary btn-block">Take a Tour</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-lg-4 r7_m-t-20 r5_m_t_20 jQueryEqualHeight">
+				<div class="card">
+					<div class="card-body">
+						<h6 class="slim-card-title">Sales Report</h6>
+						<div class="row">
+							<div class="col text-center">
+								<label class="tx-12">Today</label>
+								<p class="f-w-600">1,307</p>
+							</div>
+							<div class="col text-center b-l">
+								<label class="tx-12">This Week</label>
+								<p class="f-w-600">2,804</p>
+							</div>
+							<div class="col text-center b-l">
+								<label class="tx-12">This Month</label>
+								<p class="f-w-600">28,067</p>
+							</div>
+						</div>
+
+						<div class="pvr-progress-bar blue m-t-20">
+							<div class="bar-labels">
+								<div class="bar-label-left">
+									<span>New Users</span>
+									<span class="text-success">+114</span>
+								</div>
+								<div class="bar-label-right">
+									<span class="info">83%</span>
+								</div>
+							</div>
+							<div class="bar-level-1" style="width: 100%">
+								<div class="bar-level-2" style="width: 83%">
+									<div class="bar-level-3" style="width: 20%"></div>
+								</div>
+							</div>
+						</div>
+						<div class="pvr-progress-bar blue">
+							<div class="bar-labels">
+								<div class="bar-label-left">
+									<span>Order Placed</span>
+									<span class="text-danger">574</span>
+								</div>
+								<div class="bar-label-right">
+									<span class="info">40%</span>
+								</div>
+							</div>
+							<div class="bar-level-1" style="width: 100%">
+								<div class="bar-level-2" style="width: 40%">
+									<div class="bar-level-3" style="width: 10%"></div>
+								</div>
+							</div>
+						</div>
+						<div class="pvr-progress-bar blue">
+							<div class="bar-labels">
+								<div class="bar-label-left">
+									<span>Monthly Profits</span>
+									<span class="text-success">$19,887</span>
+								</div>
+								<div class="bar-label-right">
+									<span class="info">78%</span>
+								</div>
+							</div>
+							<div class="bar-level-1" style="width: 100%">
+								<div class="bar-level-2" style="width: 78%">
+									<div class="bar-level-3" style="width: 50%"></div>
+								</div>
+							</div>
+						</div>
+						<div class="pvr-progress-bar blue">
+							<div class="bar-labels">
+								<div class="bar-label-left">
+									<span>New Users</span>
+									<span class="text-success">+114</span>
+								</div>
+								<div class="bar-label-right">
+									<span class="info">83%</span>
+								</div>
+							</div>
+							<div class="bar-level-1" style="width: 100%">
+								<div class="bar-level-2" style="width: 83%">
+									<div class="bar-level-3" style="width: 20%"></div>
+								</div>
+							</div>
+						</div>
+						<div class="pvr-progress-bar blue">
+							<div class="bar-labels">
+								<div class="bar-label-left">
+									<span>Order Placed</span>
+									<span class="text-danger">574</span>
+								</div>
+								<div class="bar-label-right">
+									<span class="info">40%</span>
+								</div>
+							</div>
+							<div class="bar-level-1" style="width: 100%">
+								<div class="bar-level-2" style="width: 40%">
+									<div class="bar-level-3" style="width: 10%"></div>
+								</div>
+							</div>
+						</div>
+						<div class="pvr-progress-bar blue">
+							<div class="bar-labels">
+								<div class="bar-label-left">
+									<span>Monthly Profits</span>
+									<span class="text-success">$19,887</span>
+								</div>
+								<div class="bar-label-right">
+									<span class="info">78%</span>
+								</div>
+							</div>
+							<div class="bar-level-1" style="width: 100%">
+								<div class="bar-level-2" style="width: 78%">
+									<div class="bar-level-3" style="width: 50%"></div>
+								</div>
+							</div>
+						</div>
+						<div class="pvr-progress-bar blue">
+							<div class="bar-labels">
+								<div class="bar-label-left">
+									<span>Monthly Profits</span>
+									<span class="text-success">$19,887</span>
+								</div>
+								<div class="bar-label-right">
+									<span class="info">78%</span>
+								</div>
+							</div>
+							<div class="bar-level-1" style="width: 100%">
+								<div class="bar-level-2" style="width: 78%">
+									<div class="bar-level-3" style="width: 50%"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="chat">
+		<div class="app_chat_button">
+			<i class="material-icons">chat</i>
+			<span class="p-r-15">Chat</span>
+		</div>
+		<div class="app_chat_w">
+			<div class="app_chat_i">
+				<div class="chat-close">
+					<i class="material-icons">close</i>
+				</div>
+				<div class="app_chat_head">
+					<div class="pvr-user-w with-status status-green">
+						<div class="pvr-user-avatar-w">
+							<div class="user-avatar">
+								<img alt="" src="http://via.placeholder.com/128x128">
+							</div>
+						</div>
+						<div class="user-name">
+							<h6 class="user-title">
+								John Smith
+							</h6>
+							<div class="user-role">
+								Administrator
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="chat-messages theme_2">
+					<div class="message">
+						<div class="message-content">
+							Lorem Ipsum is simply dummy.
+						</div>
+					</div>
+					<div class="date-break">
+						Mon 10:20am
+					</div>
+					<div class="message">
+						<div class="message-content">
+							Lorem Ipsum is simply dummy text of the printing.
+						</div>
+					</div>
+					<div class="message self">
+						<div class="message-content">
+							Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+						</div>
+					</div>
+				</div>
+				<div class="chat-controls">
+					<input class="message-input" placeholder="Type your message here..." type="text">
+					<div class="chat-extra">
+						<a href="javascript:void(0)">
+							<span class="extra-tooltip">Attach Document</span>
+							<i class="material-icons">attach_file</i>
+						</a>
+						<a href="javascript:void(0)">
+							<span class="extra-tooltip">Insert Photo</span>
+							<i class="material-icons">add_a_photo</i>
+						</a>
+						<a href="javascript:void(0)" class="pull-right change_chat_theme">
+							<span class="extra-tooltip">Change chat theme</span>
+							<i class="material-icons">refresh</i>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
