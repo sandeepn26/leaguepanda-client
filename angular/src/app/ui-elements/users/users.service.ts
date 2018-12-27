@@ -23,10 +23,14 @@ export class UserService {
   
   register(user: User) {
 	  var strUser = JSON.stringify(user);
-	  console.log('in service'+user.displayName);
+	  console.log('in service'+strUser);
 	  
 		let headers = new HttpHeaders();
         headers.append('Content-Type', 'application/json');
+		headers.append('Cache-control', 'no-cache');
+		headers.append('Cache-control', 'no-store');
+		headers.append('Expires', '0');
+		headers.append('Pragma', 'no-cache');
       
 	  return this.http.post('//localhost:8080/register', user, { headers: headers }).subscribe(
         res => {
