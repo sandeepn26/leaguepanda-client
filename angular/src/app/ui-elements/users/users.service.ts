@@ -42,6 +42,22 @@ export class UserService {
       );
   }
   
+  doLoginPromise(login):Promise<any>{
+      console.log("Promise doLogin..............");
+      const headers = new HttpHeaders()
+      headers.append('Content-Type', 'application/json');
+      headers.append('Access-Control-Allow-Origin','*');
+      //this._options = new RequestOptions({headers: headers});
+      return this.http.post("http://localhost:8080/login", login, { headers: headers }).toPromise();
+    }
+
+    login(login): Observable<any>{
+      console.log("Promise doLogin..............");
+      const headers = new HttpHeaders()
+      headers.append('Content-Type', 'application/json');
+      headers.append('Access-Control-Allow-Origin','*');
+      return this.http.post("http://localhost:8080/login", login, { headers: headers });
+    }
   
   
 }
